@@ -1,0 +1,2 @@
+# AutomatSortBomboane
+Proiect sincretic
