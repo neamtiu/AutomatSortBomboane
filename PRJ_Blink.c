@@ -14,6 +14,6 @@ void PRJ_Blink(uint8_t PB_pinSelect)
 
 	PRJ_TimerXms(1000);//wait 1s
 	
-	PORTB ^= (1<<PB_pinSelect);//unset the specified pin
+	PORTB &= ~(1<<PB_pinSelect);//unset the specified pin
 }
 
