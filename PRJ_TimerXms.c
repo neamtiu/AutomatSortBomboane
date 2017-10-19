@@ -14,8 +14,7 @@ void PRJ_TimerXms(int value_ms)
 	TCCR1B |= (1 << WGM12);
 	
 	//Period = 0,064ms (for 16Mhz clock and 1024 prescaler value) 
-	//=> 15625d(3D09h) impulses for 1 second 
-	   
+	//=> 15625d(3D09h) impulses for 1 second	   
 	OCRvalue = value_ms / 0.064;
 	OCR1A = OCRvalue;
 	
