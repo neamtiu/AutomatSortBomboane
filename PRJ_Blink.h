@@ -16,6 +16,6 @@
 #define BLUE_led 4//pin 11 (PB4)
 #define GREEN_led 3//pin 12 (PB3)
 
-void PRJ_Blink(uint8_t PB_pinNumber);
+void PRJ_BlinkLed(uint8_t PB_pinNumber);
 
 #endif /* PRJ_BLINK_H_ */
