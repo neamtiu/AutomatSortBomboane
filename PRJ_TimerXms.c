@@ -7,9 +7,9 @@
 
 #include "PRJ_TimerXms.h"
     
-void PRJ_TimerXms(int value_ms)
+void PRJ_TimerXms(uint16_t value_ms)
 {
-	int OCRvalue;
+	uint16_t OCRvalue;
 	//Use CTC on OCR1A (working mode4) for Timer1(16 bit)
 	TCCR1B |= (1 << WGM12);
 	
