@@ -24,10 +24,11 @@ void PRJ_TimerXms(uint16_t value_ms)
 	
 	while(TCNT1 != OCR1A)
 	{
-		//waits for overflow (passed 1 second)
+		//waits for the specified time to pass
 	}
-	TIFR1 &= ~(1 << TOV1); 
 	
+	//reset the overflow bit
+	TIFR1 &= ~(1 << TOV1);	
 	//stop the timer
 	TCCR1B &= 0b11111000;
 	//reset the timer
