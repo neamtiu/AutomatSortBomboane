@@ -11,6 +11,6 @@
 
 #include <avr/io.h>
 
-void PRJ_mytimer_ms(int value_ms);
+void PRJ_mytimer_ms(uint16_t value_ms);
 
 #endif /* PRJ_TIMERXMS_H_ */
