@@ -15,7 +15,7 @@ void PRJ_Servo(uint16_t position)
 	//reset the timer
 	TCNT1 = 0;
 	//set port b pin 1 as pwm output
-	DDRB |= 0xFF;
+	DDRB |= (1<<PORTB1);
 	//use timer1 in fast pwm mode using ICR1 as TOP
 	TCCR1A |= (1 << WGM11);
 	TCCR1B |= (1 << WGM12)|(1 << WGM13);
